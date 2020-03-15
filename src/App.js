@@ -19,13 +19,11 @@ class App extends Component {
         });
     };
     
-    
     handleInput = (event) => {
         this.setState({
             pageTitle: event.target.value
         });
     };
-    
     
     render() {
         console.log('Render');
