@@ -5,7 +5,7 @@ import * as serviceWorker from './serviceWorker';
 import App from './App.js'
 
 ReactDOM.render(
-    <App/>
+    <App title={'I am from props!'}/>
     , document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
