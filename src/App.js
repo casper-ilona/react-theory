@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.scss';
 import About from './About/About';
 import Cars from './Cars/Cars';
-import { NavLink, Route, Switch } from 'react-router-dom';
+import { NavLink, Route, Switch,Redirect } from 'react-router-dom';
 import CarDetail from './CarDetali/CarDetali';
 
 class App extends Component {
@@ -42,7 +42,8 @@ class App extends Component {
                     <Route path="/about" component={About}/>
                     <Route path="/cars/:name" component={CarDetail}/>
                     <Route path="/cars" component={Cars}/>
-                    <Route render={() => <h1 style={{color:'red', textAlign:'center'}}> 404 not found</h1>}/>
+                    {/*<Route render={() => <h1 style={{color:'red', textAlign:'center'}}> 404 not found</h1>}/>*/}
+                    <Redirect to={'/'}/>
                 </Switch>
             
                 
