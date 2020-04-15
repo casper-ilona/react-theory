@@ -26,9 +26,7 @@ class App extends Component {
                         
                         <li>
                             <NavLink to={{
-                              pathname:'/cars',
-                              search: '?a=q&b=2',
-                              hash: 'wfm-hash'
+                              pathname:'/cars'
                             }}>Cars</ NavLink>
                         </li>
                     </ul>
